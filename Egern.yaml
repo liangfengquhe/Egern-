@@ -49,7 +49,7 @@ policy_groups:
     name: AllServer
     type: select
     urls:
-    - "替换为自己的订阅链接"
+    - 替换为自己的订阅链接
     icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/meta.png
 - select:
     name: 'Telegram '
