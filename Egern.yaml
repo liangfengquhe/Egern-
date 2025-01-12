@@ -1,6 +1,6 @@
 # By：qihe
 # X: @huagangguanyue
-# 最后一次更新：2025.1.12
+# 最后一次更新：2025.1.13日,2:55
 # 下载链接：https://raw.githubusercontent.com/liangfengquhe/Egern-/refs/heads/main/Egern.yaml
 # TG频道：https://t.me/+GrjUgIFaYFpmYWI1
 # 下载配置后,请手动添加机场订阅
@@ -28,7 +28,7 @@ dns:
     dot.pub: 1.12.12.12
     dns.alidns.com: 223.5.5.5
     doh.pub: 1.12.12.12
-  public_ip_lookup_url: ''
+  public_ip_lookup_url: https://ifconfig.me/ip
 policy_groups:
 - select:
     name: Man-made
@@ -376,9 +376,6 @@ rules:
 - rule_set:
     match: https://ruleset.skk.moe/List/ip/telegram_asn.conf
     policy: 'Telegram '
-- rule_set:
-    match: https://github.com/Repcz/Tool/raw/X/Egern/Rules/ProxyMedia.yaml
-    policy: 国外视频
 - rule_set:
     match: https://raw.githubusercontent.com/liangfengquhe/suege/refs/heads/main/promax.list
     policy: United Kingdom
