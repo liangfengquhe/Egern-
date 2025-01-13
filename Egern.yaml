@@ -1,6 +1,6 @@
 # By：qihe
 # X: @huagangguanyue
-# 最后一次更新：2025.1.13日,2:55
+# 最后一次更新：2025.1.13日,20:01
 # 下载链接：https://raw.githubusercontent.com/liangfengquhe/Egern-/refs/heads/main/Egern.yaml
 # TG频道：https://t.me/+GrjUgIFaYFpmYWI1
 # 下载配置后,请手动添加机场订阅
@@ -8,8 +8,9 @@
 ipv6: true
 allow_external_connections: true
 vif_only: true
-hide_vpn_icon: true
+hide_vpn_icon: false
 geoip_db_url: https://raw.githubusercontent.com/Loyalsoldier/geoip/release/Country.mmdb
+asn_db_url: https://github.com/P3TERX/GeoLite.mmdb/raw/download/GeoLite2-ASN.mmdb
 proxy_latency_test_url: https://www.bing.com
 direct_latency_test_url: http://p11.douyinpic.com
 dns:
@@ -45,12 +46,12 @@ policy_groups:
     - Taiwan
     - Hong Kong
     - Singapore
-    icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/Apple_SpringLoaded.png
+    icon: https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/AppleIntelligence.png
 - external:
     name: AllServer
     type: select
     urls:
-    - 替换为自己的订阅链接
+    - 订阅链接
     icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/meta.png
 - select:
     name: 'Telegram '
@@ -140,17 +141,6 @@ policy_groups:
     - DIRECT
     icon: https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/senplayer.png
 - select:
-    name: 微软服务
-    policies:
-    - DIRECT
-    - Hong Kong
-    - Japan
-    - Taiwan
-    - Singapore
-    - United States
-    icon: https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/microsoft.png
-    hidden: true
-- select:
     name: Apple
     policies:
     - DIRECT
@@ -234,7 +224,7 @@ policy_groups:
     flatten: true
     filter: 韩|韩国|Korea|KR|🇰🇷
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Korea.png
-- select:
+- auto_test:
     name: Outside the scope
     policies:
     - AllServer
@@ -358,7 +348,7 @@ rules:
     match: https://raw.githubusercontent.com/liangfengquhe/ios_rule_script/refs/heads/master/rule/Surge/Google/Google.list
     policy: Outside the scope
 - rule_set:
-    match: https://github.com/Repcz/Tool/raw/X/Egern/Rules/Bilibili.yaml
+    match: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/BiliBili/BiliBili.list
     policy: Mainland
     disabled: false
 - rule_set:
@@ -422,19 +412,19 @@ mitm:
   ca_p12: egern.p12
   ca_passphrase: egern
 modules:
+- url: http://script.hub/file/_start_/https://raw.githubusercontent.com/ClydeTime/BiliBili/master/modules/BiliBiliDailyBonus.plugin/_end_/BiliBiliDailyBonus.sgmodule?type=loon-plugin&target=surge-module&del=true
+  enabled: false
 - url: https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Beta/Google%E9%87%8D%E5%AE%9A%E5%90%91.beta.sgmodule
   enabled: true
 - url: https://github.com/BiliUniverse/ADBlock/releases/latest/download/BiliBili.ADBlock.sgmodule
   enabled: true
 - url: http://script.hub/file/_start_/http://local.text/_end_/local.sgmodule?type=surge-module&target=surge-module&del=true&localtext=%23!name%3DTg%E5%A4%96%E9%93%BE%E8%B7%B3%E8%BD%AC%E9%87%8D%E5%AE%9A%E5%90%91%0A%23!desc%3DTg%E9%87%8D%E5%AE%9A%E5%90%91%E5%A4%96%E9%93%BE%E8%B7%B3%E8%BD%AC%EF%BC%8C%E8%87%B3%E7%AC%AC%E4%B8%89%E6%96%B9%E5%AE%A2%E6%88%B7%E7%AB%AFturrit%0A%23!author%3D%E9%BA%BB%E8%A1%A3%0A%23!icon%3Dhttps%3A%2F%2Fraw.githubusercontent.com%2FLovedGM%2FQuantumult-X-TuBiao%2Fmain%2FYYY%2Fyyy5.png%0A%23!tag%3D%E6%A8%B1%E5%B2%9B%2C%E9%BA%BB%E8%A1%A3%0A%0A%5BURL%20Rewrite%5D%0A(https%3A%5C%2F%5C%2F)%3Ft.me%5C%2F(.%2B)%20turrit%3A%2F%2Fresolve%3Fdomain%3D%242%20302%0A%0A%5BMITM%5D%0Ahostname%20%3D%20%25APPEND%25%20t.me
   enabled: true
-- url: http://script.hub/file/_start_/https://raw.githubusercontent.com/ClydeTime/BiliBili/master/modules/BiliBiliDailyBonus.plugin/_end_/BiliBiliDailyBonus.sgmodule?type=loon-plugin&target=surge-module&del=true
-  enabled: true
 - url: https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Official/%E7%99%BE%E5%BA%A6%E8%B4%B4%E5%90%A7%E7%AD%BE%E5%88%B0.official.sgmodule
+  enabled: false
+- url: https://raw.githubusercontent.com/Script-Hub-Org/Script-Hub/main/modules/script-hub.surge.sgmodule
   enabled: true
-- url: https://raw.githubusercontent.com/sub-store-org/Sub-Store/master/config/Surge.sgmodule
-  enabled: true
-- url: https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Official/%E2%AD%90%EF%B8%8F%20Script%20Hub.official.sgmodule
+- url: https://raw.githubusercontent.com/sub-store-org/Sub-Store/master/config/Egern.yaml
   enabled: true
 - url: https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Official/Reddit%20%E5%8E%BB%E5%B9%BF%E5%91%8A.sgmodule
   enabled: true
