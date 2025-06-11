@@ -341,10 +341,8 @@ policy_groups:
 - external:
     name: AllServer
     type: select
-    urls:
-    - https://jsjc.cfd/api/v1/client/subscribe?token=75504d99cee7c656f04c1652cd362462
-    - https://syyn.lyf520.xyz/api/v1/client/subscribe?token=618cfc26f697d8827d160847c1cf4d94
-    - https://sss.stga.cn/api/v1/client/subscribe?token=1f7376aa2eed595e890d9274229408e1
+    urls:"此处填写代理链接"
+     
     urls_disabled:
     - https://jsjc.cfd/api/v1/client/subscribe?token=75504d99cee7c656f04c1652cd362462
     - https://sss.stga.cn/api/v1/client/subscribe?token=1f7376aa2eed595e890d9274229408e1
