@@ -5,4 +5,4 @@ Egern配置
 增加了自用的脚本，更新了新的图标，重写了 DNS 转发规则
 建议使用 xuechun.yaml ，旧版已废弃
 下载链接：
-https://raw.githubusercontent.com/liangfengquhe/Egern-/main/xuechun%20.yaml
+https://raw.githubusercontent.com/liangfengquhe/Egern-/main/xuechun.yaml
