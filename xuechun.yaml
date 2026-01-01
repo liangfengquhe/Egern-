@@ -1,3 +1,4 @@
+# 来自qihe，更新时间：2026.1.1日 22:26
 ipv6: true
 allow_external_connections: true
 vif_only: false
@@ -80,7 +81,7 @@ policy_groups:
     - Japan
     - Taiwan
     flatten: false
-    icon: https://raw.githubusercontent.com/sooyaaabo/Loon/main/Icon/App-Icon/MediaStorm.png
+    icon: https://raw.githubusercontent.com/sooyaaabo/IconLibrary/main/App/MediaStorm.png
     hidden: false
 - select:
     name: Meta
@@ -102,7 +103,7 @@ policy_groups:
     - United States
     - Singapore
     flatten: false
-    icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/Telegram_03.png
+    icon: https://raw.githubusercontent.com/sooyaaabo/IconLibrary/main/App/Telegram-02.png
     hidden: false
 - select:
     name: Twitter
@@ -114,7 +115,7 @@ policy_groups:
     - United States
     - Singapore
     flatten: false
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Twitter.png
+    icon: https://raw.githubusercontent.com/sooyaaabo/IconLibrary/main/App/Twitter-02.png
     hidden: false
 - select:
     name: Game
@@ -123,7 +124,7 @@ policy_groups:
     - United States
     - Hong Kong
     flatten: false
-    icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/PlayStation.png
+    icon: https://raw.githubusercontent.com/sooyaaabo/IconLibrary/main/App/EpicGames.png
     hidden: false
 - select:
     name: Senplayer
@@ -156,7 +157,7 @@ policy_groups:
     - United States
     - Singapore
     flatten: false
-    icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/ChatGPT5.png
+    icon: https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/chatgpt4.0.png
     hidden: false
 - select:
     name: PayPal
@@ -166,7 +167,7 @@ policy_groups:
     - United States
     - Hong Kong
     flatten: false
-    icon: https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/paypal(2).png
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/PayPal.png
     hidden: false
 - select:
     name: GitHub
@@ -251,7 +252,7 @@ policy_groups:
     - Hong Kong
     - Mainland
     flatten: false
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/bilibili_4.png
+    icon: https://raw.githubusercontent.com/sooyaaabo/IconLibrary/main/App/BiliUniverse.png
     hidden: false
 - select:
     name: Apple
@@ -284,8 +285,6 @@ policy_groups:
     name: Microsoft
     policies:
     - Mainland
-    - GitHub
-    - Hong Kong
     - Taiwan
     - Japan
     - Korea
@@ -305,7 +304,7 @@ policy_groups:
     - Singapore
     - Outside the scope
     flatten: false
-    icon: https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/linkedin.png
+    icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Speedtest.png
     hidden: false
 - select:
     name: Mac
@@ -314,53 +313,54 @@ policy_groups:
     flatten: true
     filter: (?i).*(Macao|Macau|MO|澳門|澳门).*
     hidden: true
-- load_balance:
+- select:
     name: Hong Kong
     policies:
     - AllServer
     flatten: true
     filter: 🇭🇰|香港|港|HK|Hong
-    icon: https://raw.githubusercontent.com/arthur97172/Rule_script/main/Iconset/HK.png
-    hidden: true
-- load_balance:
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Hong_Kong.png
+    hidden: false
+- select:
     name: United States
     policies:
     - AllServer
     flatten: true
     filter: 🇺🇸|美国|美|States|US
-    icon: https://raw.githubusercontent.com/arthur97172/Rule_script/main/Iconset/US.png
-    hidden: true
-- load_balance:
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/United_States.png
+    hidden: false
+- select:
     name: United Kingdom
     policies:
     - AllServer
     flatten: true
     filter: 🇬🇧|英国|英|英格兰|UK|uk|United Kingdom
-    hidden: true
-- load_balance:
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/United_Kingdom.png
+    hidden: false
+- select:
     name: Taiwan
     policies:
     - AllServer
     flatten: true
     filter: 🇹🇼|台湾|台|TW|Tai
-    icon: https://raw.githubusercontent.com/arthur97172/Rule_script/main/Iconset/TW.png
-    hidden: true
-- load_balance:
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Taiwan.png
+    hidden: false
+- select:
     name: Japan
     policies:
     - AllServer
     flatten: true
     filter: 🇯🇵|日|日本|JP
-    icon: https://raw.githubusercontent.com/arthur97172/Rule_script/main/Iconset/JP.png
-    hidden: true
-- load_balance:
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Japan.png
+    hidden: false
+- select:
     name: Singapore
     policies:
     - AllServer
     flatten: true
     filter: 🇸🇬|新|新加坡|SG
-    icon: https://raw.githubusercontent.com/arthur97172/Rule_script/main/Iconset/SG.png
-    hidden: true
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Singapore.png
+    hidden: false
 - select:
     name: Korea
     policies:
@@ -686,7 +686,7 @@ scriptings:
     cron: 0 0 12 * * ?
     script_url: http://script.hub/convert/_start_/https://raw.githubusercontent.com/deezertidal/private/main/rumors.js/_end_/rumors.js?type=qx-script&target=surge-script&del=true&jqEnabled=true
     timeout: 60
-    disabled: false
+    disabled: true
 - schedule:
     name: 支付宝
     cron: 0 15 9 ? * *
@@ -750,8 +750,6 @@ modules:
 - url: https://github.com/Maasea/sgmodule/raw/refs/heads/master/Bilibili.Helper.sgmodule
   enabled: true
 - url: https://raw.githubusercontent.com/z-jinke/Panel/refs/heads/main/Flowsub
-  compat_arguments:
-    A重置: '4'
   enabled: true
 - url: https://github.com/NSRingo/WeatherKit/releases/latest/download/iRingo.WeatherKit.sgmodule
   enabled: true
@@ -852,7 +850,7 @@ modules:
 - url: https://raw.githubusercontent.com/githubdulong/Script/master/Surge/jd_price.sgmodule
   enabled: true
 - url: https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Official/%E6%90%BA%E7%A8%8B%E6%97%85%E8%A1%8C%E7%AD%BE%E5%88%B0.official.sgmodule
-  enabled: true
+  enabled: false
 - url: https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Official/%F0%9F%8D%9F%20BiliADBlock.official.sgmodule
   enabled: true
 - url: https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Beta/QQ%E9%9F%B3%E4%B9%90%E5%8E%BB%E5%B9%BF%E5%91%8A.beta.sgmodule
