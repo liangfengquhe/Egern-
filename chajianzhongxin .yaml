@@ -1,12 +1,12 @@
 name: 可莉插件中心2Egern
-description: 支持可莉插件中心的插件给Egern使用; 非Loon用户切勿反馈插件任何问题，尊重原创; 使用前请先添加ScriptHub模块. 插件中心网址 https://pluginhub.kelee.one
-author: 原作者@iKeLee
+description: 支持可莉插件中心的插件给 Egern 使用；非 Loon 用户切勿反馈插件任何问题，尊重原创；使用前请先添加 ScriptHub 模块。插件中心网址 https://hub.kelee.one
+author: 原作者 @iKeLee
 
 body_rewrites:
-- response_regex:
-    match: https://hub\.kelee\.one/(?:Lpx_)?list\.json
-    find: loon://import\?plugin=(https://kelee\.one/Tool/Loon/Lpx/(.+?)\.lpx)
-    replace: egern:///modules/new?url=http://script.hub/file/_start_/$1/_end_/$2.sgmodule%3Ftype%3Dloon-plugin%26target%3Dsurge-module%26del%3Dtrue%26jqEnabled%3Dtrue%26pm%3D.%26sni%3D.
+  - response_regex:
+      match: https://hub\.kelee\.one/(?:Lpx_)?list\.json
+      find: loon://import\?plugin=(https://kelee\.one/Tool/Loon/Lpx/(.+?)\.lpx)
+      replace: egern:///modules/new?url=http://script.hub/file/_start_/$1/_end_/$2.sgmodule%3Ftype%3Dloon-plugin%26target%3Dsurge-module%26del%3Dtrue%26jqEnabled%3Dtrue%26pm%3D.%26sni%3D.
 
 mitm:
   hostnames:
