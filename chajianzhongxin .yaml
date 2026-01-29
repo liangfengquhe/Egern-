@@ -4,7 +4,7 @@ author: 原作者@iKeLee
 
 body_rewrites:
 - response_regex:
-    match: https://pluginhub\.kelee\.one/(?:Lpx_)?list\.json
+    match: https://hub\.kelee\.one/(?:Lpx_)?list\.json
     find: loon://import\?plugin=(https://kelee\.one/Tool/Loon/Lpx/(.+?)\.lpx)
     replace: egern:///modules/new?url=http://script.hub/file/_start_/$1/_end_/$2.sgmodule%3Ftype%3Dloon-plugin%26target%3Dsurge-module%26del%3Dtrue%26jqEnabled%3Dtrue%26pm%3D.%26sni%3D.
 
