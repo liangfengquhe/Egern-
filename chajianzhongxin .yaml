@@ -10,4 +10,4 @@ body_rewrites:
 mitm:
   hostnames:
     includes:
-    -hub.kelee.one
+      - hub.kelee.one
